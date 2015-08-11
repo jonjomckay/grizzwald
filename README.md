@@ -23,7 +23,7 @@ The library can be installed with Composer, by including the following in your `
 
 ```php
 // Create a new instance of the client, passing in the base URL to your fleet instance
-$client = new \Xenolope\Grizzwald\FleetClient('http://172.16.1.100:49153');
+$client = new FleetClient('http://172.16.1.100:49153');
 
 // Get a list of all the machines in the cluster
 $machines = $client->listMachines(); // Returns an array of \Xenolope\Grizzwald\Entity\Machine objects
