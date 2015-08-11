@@ -13,6 +13,8 @@ use Xenolope\Grizzwald\Iterator\ResultIterator;
 class FleetClient
 {
 
+    const FLEET_API_LOCATION = '/fleet/v1/';
+
     /**
      * @var ClientInterface
      */
@@ -194,12 +196,12 @@ class FleetClient
         $queryParameters = array_filter($queryParameters);
 
         if ($requestBody) {
-            $response = $this->client->request($method, $url, [
+            $response = $this->client->request($method, self::FLEET_API_LOCATION . $url, [
                 'json' => $requestBody,
                 'query' => $queryParameters
             ]);
         } else {
-            $response = $this->client->request($method, $url, [
+            $response = $this->client->request($method, self::FLEET_API_LOCATION . $url, [
                 'query' => $queryParameters
             ]);
         }
