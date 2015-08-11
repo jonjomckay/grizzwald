@@ -98,7 +98,7 @@ class FleetClient
      * @return UnitState[]|array
      * @throws \Exception
      */
-    public function listStates($machineId = null, $unitName = null)
+    public function listUnitStates($machineId = null, $unitName = null)
     {
         $parameters = [];
 
