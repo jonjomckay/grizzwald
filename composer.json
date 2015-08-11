@@ -1,0 +1,14 @@
+{
+  "name": "xenolope/grizzwald",
+  "description": "A client library to interact with the CoreOS fleet API",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Xenolope\\Grizzwald\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">5.5",
+    "guzzlehttp/guzzle": "~6.0"
+  }
+}
