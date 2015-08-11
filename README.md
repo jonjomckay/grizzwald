@@ -3,6 +3,8 @@ Grizzwald
 
 *"Grizz was in the Navy"* - **Tracy Jordan, 30 Rock (S01E01: The Aftermath)**
 
+## Description
+
 Grizzwald is a simple PHP library that interacts with the [CoreOS fleet API](https://coreos.com/fleet/docs/latest/api-v1.html), for easy management of your cluster's unit files.
 
 ## Installation
