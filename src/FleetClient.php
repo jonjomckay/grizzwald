@@ -18,7 +18,7 @@ class FleetClient
      */
     private $client;
 
-    public function __construct(ClientInterface $client = null, $baseUrl)
+    public function __construct($baseUrl, ClientInterface $client = null)
     {
         if ($client == null) {
             $this->client = new Client([
@@ -165,7 +165,7 @@ class FleetClient
             $machineID = $unit['machineID'];
         }
 
-        return new Unit($unit['name'], $options, $unit['desiredState'], $unit['currentState'], $machineID);
+        return new Unit($unit['name'], $unit['desiredState'], $options, $unit['currentState'], $machineID);
     }
 
     private function fetchIterator($url, $type)

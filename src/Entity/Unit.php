@@ -36,16 +36,16 @@ class Unit
     /**
      * Unit constructor.
      * @param string $name
-     * @param array|UnitOption[] $options
      * @param string $desiredState
+     * @param array|UnitOption[] $options
      * @param string $currentState
      * @param string $machineId
      */
-    public function __construct($name, $options, $desiredState, $currentState = null, $machineId = null)
+    public function __construct($name, $desiredState, $options = null, $currentState = null, $machineId = null)
     {
         $this->name = $name;
-        $this->options = $options;
         $this->desiredState = $desiredState;
+        $this->options = $options;
         $this->currentState = $currentState;
         $this->machineId = $machineId;
     }
